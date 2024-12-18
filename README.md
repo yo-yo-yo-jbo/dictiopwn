@@ -17,3 +17,13 @@ Nevertheless, since there is no lockout policy, an attacker could easily run a l
 ```
 - The `-d` flag is mandatory and specified the dictionary to be used. The dictionary should split attempts by linebreaks. I've included a [naive dictionary file](english_wordlist.txt) in the repository.
 - The `-c` flag is optional and makes the utility attempt every casing option for each attempt, hence covering more options but making the dictionary attack run longer.
+
+## Disclaimer
+I release this tool for educational purposes only and provide it without warranty.  
+Use this tool at your own risk.
+
+## Detection
+Besides examining the security audit logs, defenders are encouraged to look for anomalous parent processes of the `unix_chkpwd` utility.
+
+Stay tuned!
+Jonathan Bar Or
