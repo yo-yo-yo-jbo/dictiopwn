@@ -7,7 +7,7 @@ Unix-based dictionary attack utility, based on the [unix_chkpwd](https://linux.d
 On many distributions, a SUID binary called `unix_chkpwd` exists and is being used by [PAM](https://en.m.wikipedia.org/wiki/Linux_PAM).  
 That utility can read from its standard input (which is verified not to be a Terminal input) and compare its hash to the hash found in the `/etc/shadow` file.  
 Generally that utility should only be used by `PAM` itself, but you can invoke it as a child process.  
-In the past I have found that the hash comparison was a naive `memcmp`, which would expose the check to a [Timing sude-channel attack](https://en.m.wikipedia.org/wiki/Timing_attack) but it seems to have been fixed since then.  
+In the past I have found that the hash comparison was a naive `memcmp`, which would expose the check to a [Timing side-channel attack](https://en.m.wikipedia.org/wiki/Timing_attack) but it seems to have been fixed since then.  
 Nevertheless, since there is no lockout policy, an attacker could easily run a local dictionary attack to uncover the password.  
 *Note*: the utility does create security audit logs.
 
