@@ -19,7 +19,7 @@ python3 -m pip install -r ./requirements.txt
 
 Running:
 ```
-./dictiopwn.py [-d dict_path] [-c]
+./dictiopwn.py -d DICT [-c]
 ```
 - The `-d` flag is mandatory and specified the dictionary to be used. The dictionary should split attempts by linebreaks. I've included a [naive dictionary file](english_wordlist.txt) in the repository.
 - The `-c` flag is optional and makes the utility attempt every casing option for each attempt, hence covering more options but making the dictionary attack run longer.
