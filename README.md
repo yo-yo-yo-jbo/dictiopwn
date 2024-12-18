@@ -1,5 +1,7 @@
-# dictiopwn
+# Dictiopwn
 Unix-based dictionary attack utility, based on the [unix_chkpwd](https://linux.die.net/man/8/unix_chkpwd) utility.
+
+![Dictpiown](logo.png)
 
 ## How does it work
 On many distributions, a SUID binary called `unix_chkpwd` exists and is being used by [PAM](https://en.m.wikipedia.org/wiki/Linux_PAM).  
@@ -13,5 +15,5 @@ Nevertheless, since there is no lockout policy, an attacker could easily run a l
 ```
 ./dictpwn.py [-d dict_path] [-c]
 ```
-- The `-d` flag is mandatory and specified the dictionary to be used. The dictionary should split attempts by linebreaks. I've included a naive dictionary file [english_wordlist.txt] in the repository.
+- The `-d` flag is mandatory and specified the dictionary to be used. The dictionary should split attempts by linebreaks. I've included a [naive dictionary file](english_wordlist.txt) in the repository.
 - The `-c` flag is optional and makes the utility attempt every casing option for each attempt, hence covering more options but making the dictionary attack run longer.
