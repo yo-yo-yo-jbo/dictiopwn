@@ -12,6 +12,12 @@ Nevertheless, since there is no lockout policy, an attacker could easily run a l
 *Note*: the utiluty does create security audit logs.
 
 ## Usage
+Installing dependencies:
+```shell
+python3 -m pip install -r ./requirements.txt
+```
+
+Running:
 ```
 ./dictiopwn.py [-d dict_path] [-c]
 ```
