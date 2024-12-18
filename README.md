@@ -9,7 +9,7 @@ That utility can read from its standard input (which is verified not to be a Ter
 Generally that utility should only be used by `PAM` itself, but you can invoke it as a child process.  
 In the past I have found that the hash comparison was a naive `memcmp`, which would expose the check to a [Timing sude-channel attack](https://en.m.wikipedia.org/wiki/Timing_attack) but it seems to have been fixed since then.  
 Nevertheless, since there is no lockout policy, an attacker could easily run a local dictionary attack to uncover the password.  
-*Note*: the utiluty does create security audit logs.
+*Note*: the utility does create security audit logs.
 
 ## Usage
 Installing dependencies:
