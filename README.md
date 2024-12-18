@@ -26,4 +26,5 @@ Use this tool at your own risk.
 Besides examining the security audit logs, defenders are encouraged to look for anomalous parent processes of the `unix_chkpwd` utility.
 
 Stay tuned!
+
 Jonathan Bar Or
