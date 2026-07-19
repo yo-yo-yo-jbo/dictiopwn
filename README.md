@@ -33,4 +33,4 @@ Besides examining the security audit logs, defenders are encouraged to look for 
 
 Stay tuned!
 
-Jonathan Bar Or
+Jonathan Bar Or (https://jonathanbaror.com)
